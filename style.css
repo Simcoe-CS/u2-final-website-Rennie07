@@ -2,12 +2,14 @@
     padding: 3px;
     position: sticky; top: 0px;
     background-color: #141414;
+    margin: 0;
 }
 
 #navTitle { /* Styles the main section of the title on the nav bar*/
     display: flex;
     justify-content: center;
     position: sticky; top: 0px;
+    margin: 0;
 }
 
 #navTitle>h1 {
@@ -19,34 +21,41 @@
     display: flex;
     justify-content: left;
     position: sticky; top: 0px;
+    margin: 0;
 }
-
-#navLinksBar>a { /* links header */
+.pages{
+    margin-left: 25px;
+    display: flex;
+} 
+.pages>a { /* links header */
     margin-left: 20px;
     text-decoration: none;
     color: white;
 }
-#navLinksBar>a:hover {
+.pages>a:hover {
     color: #83D350;
 }
 
 body {
     margin: 0;
     background-color: #141414;
+    height: 95vh;
+    display: grid;
+    grid-template: auto 1fr auto/auto 1fr auto;
 }
 
 #essay {
     border-radius: 25px;
     border: 8px solid #1c1b1b;
     padding: 15px;
-    width: 100%;
-    height: 100%;
+    width: min-content;
+    height: min-content;
     font-family: 'Times New Roman', Times, serif;
     color: white;
     margin: auto;
     justify-content: center;
     width: calc(100% - 40px);
-    max-width: 600px;
+    max-width: 800px;
 }
 #essay>h1 {
     display: block;
@@ -71,16 +80,27 @@ body {
     text-align: justify;
 }
 
-
-
-footer {
-    background-color: #141414;
-    display: flex;
-    justify-content: center;
-}
 .logo {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+    background-color: #222222;
+    border-radius: 50%;
+    padding: 6px;
+  }
+  #youtube:hover {
+    background-color: red;
+  }
+  #instagram:hover {
+    background-color: palevioletred;
+  }
+  #facebook:hover {
+    background-color: #1877F2;
+  }
+  #twitter:hover {
+    background-color: #1DA1F2;
+  }
+  #reddit:hover {
+    background-color: #FF5700;
   }
   ul {
     list-style: none;
@@ -106,7 +126,189 @@ footer {
     background-color: red;
   }
   */
-  #image1 {
-    height: 200px;
-    width: 200px;
+  
+  /*
+  Grid section 
+  */
+  header {
+    grid-column: 1/4;
+    position: sticky; top: 0px;
   }
+  #section1 {
+    
+  }
+  #section2 {
+    
+  }
+  #section3 {
+    
+  }
+  footer {
+    background-color: #141414;
+    display: flex;
+    justify-content: center;
+    grid-column: 1/span 3;
+    margin-bottom: 0px;
+  }
+
+
+  /* 
+  Images in the about page / essay 
+  */
+  #image1 { /* image1 div*/
+    display: flex;    
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    padding: 7px;
+    width: min-content;
+    margin-left: 23px;
+  }
+  #image1>img { /* image1 image*/
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+  }
+  #image2 { /* image1 div*/
+    display: flex;    
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    padding: 7px;
+    width: min-content;
+    margin-right: 23px;
+    margin-top: 300px;
+  }
+
+  #image2>img { /* image1 image*/
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+  }
+  #image3 { /* image1 div*/
+    display: flex;    
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    padding: 7px;
+    width: min-content;
+    margin-left: 23px;
+    margin-top: 200px;
+  }
+  #image3>img { /* image1 image*/
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+  }
+  #image4 { /* image1 div*/
+    display: flex;    
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    padding: 7px;
+    width: min-content;
+    margin-left: 23px;
+    margin-top: 400px;
+  }
+  #image4>img { /* image1 image*/
+    height: 450px;
+    width: 450px;
+    border-radius: 5%;
+  }
+
+
+  /* 
+  Google Font
+    <uniquifier>: Use a unique and descriptive class name
+     <weight>: Use a value from 100 to 900 
+  */
+.roboto-slab-h1 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.roboto-slab-h2 { /*google font */
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+  /* 
+  Location section of the contact page 
+  */
+  #locationSection {
+    align-content: center;
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    margin-left: 80px;
+  }
+  #locationSection>h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 3px;
+  }
+  #map>iframe {
+    border-radius: 5%;
+    padding: 12px;
+  }
+  #map {
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    margin-top: 40px;
+    margin-left: 80px;
+  }
+
+
+  /* 
+  Contact me section of the contact page 
+  */
+  #contactSection {
+    align-content: center;
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  #contactSection>h2 {
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 3px;
+  }
+  #contactText {
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  #list>li>h2 {
+    color: white;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #list>li>p {
+    color: white;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  #indexBody {
+    background:"Amazing_Ian.jpg";
+    margin-bottom: 0;
+   }
+   nav {
+    margin-bottom: 0px;
+   }
+   #batman {
+    border-radius: 25px;
+    border: 8px solid #1c1b1b;
+    padding: 7px;
+    width: min-content;
+    height: min-content;
+    align-content: center;
+    margin: auto;
+   }
