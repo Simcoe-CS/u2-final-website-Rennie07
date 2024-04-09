@@ -164,8 +164,8 @@ body {
     margin-left: 23px;
   }
   #image1>img { /* image1 image*/
-    height: 450px;
-    width: 450px;
+    height: 200px;
+    width: 200px;
     border-radius: 5%;
   }
   #image2 { /* image1 div*/
@@ -179,8 +179,8 @@ body {
   }
 
   #image2>img { /* image1 image*/
-    height: 450px;
-    width: 450px;
+    height: 200px;
+    width: 200px;
     border-radius: 5%;
   }
   #image3 { /* image1 div*/
@@ -193,8 +193,8 @@ body {
     margin-top: 200px;
   }
   #image3>img { /* image1 image*/
-    height: 450px;
-    width: 450px;
+    height: 200px;
+    width: 200px;
     border-radius: 5%;
   }
   #image4 { /* image1 div*/
@@ -207,8 +207,8 @@ body {
     margin-top: 400px;
   }
   #image4>img { /* image1 image*/
-    height: 450px;
-    width: 450px;
+    height: 200px;
+    width: 200px;
     border-radius: 5%;
   }
 
